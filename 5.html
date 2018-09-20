@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Юникод</title>
+	<script>
+	 
+	function main(){
+		var str1='';
+		var j =38;
+		var res = [];
+		for(var i=0;i<200; i++){
+		res[i]=String.fromCharCode(j)+' ';
+		j++;
+		}
+		alert("Строка "+res);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="submit" value="Старт " onclick="main()">
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Дан массив слов. Заменить последние три символа слов, имеющих заданную длину на символ "$"</title>
+	<script>
+	 
+	function main(){
+		var str = document.getElementById("1").value;
+		var arr=str.split(' ');
+		var str1='';
+		for(var i=0;i<arr.length; i++)
+		str1+=word(arr[i]);
+		alert(str1);
+	}
+	
+	function word(strt){
+	var s;
+	if(strt.length==1||strt.length==2||strt.length==3)
+	s="$ ";
+	else{
+		s=strt.substring(0, strt.length - 3);
+		s+="$ ";
+	}
+	return s;
+	}
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Inpu string:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

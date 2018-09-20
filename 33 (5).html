@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Добавить в строку пробелы после знаков препинания, если они там отсутствуют.</title>
+	<script>
+	 
+	function main(){
+		var x = document.getElementById("1").value;;
+		var separators = ['!', ',', '.', '?', ';', '...','-', '(', ')'];
+		for (var i = 0; i < separators.length; i++) { 
+		var rg = new RegExp("\\" + separators[i], "g"); 
+		x = x.replace(rg, separators[i] + " "); 
+		}
+		alert(x);
+	}
+	
+	
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Inpu string:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

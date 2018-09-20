@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> от ‘z’ до ‘a’</title>
+	<script>
+	 
+	function main(){
+		var arr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+		var str='';
+		alert("Масив букв алфавита "+arr);	
+		var i=arr.length;
+		while(i!=0)	{
+			str+=arr[i-1].toLowerCase();
+			i--;
+		}
+		alert("Строка "+str);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="submit" value="Старт " onclick="main()">
+		
+	</form>
+</body>
+</html>

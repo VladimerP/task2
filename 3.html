@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>от ‘а’ до ‘я’</title>
+	<script>
+	 
+	function main(){
+		var arr = ['а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т','у','ф','х','ц','ч','ш','щ','ъ','ы','ь','э','ю','я'];
+		var str='';
+		alert("Масив букв алфавита "+arr);	
+		var i=arr.length;
+		while(i!=0)	{
+			str+=arr[i-1].toLowerCase();
+			i--;
+		}
+		alert("Строка "+str);
+		str='';
+		for(var j=0;j<arr.length;j++)
+		str+=arr[j];
+		alert("Строка "+str);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="submit" value="Старт " onclick="main()">
+		
+	</form>
+</body>
+</html>

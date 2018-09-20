@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>от ‘0’ до ‘9’</title>
+	<script>
+	 
+	function main(){
+		var arr = ['0','1','2','3','4','5','6','7','8','9'];
+		var arr1 = [0,1,2,3,4,5,6,7,8,9];
+		var str='';
+		alert("Масив цифр символов "+arr);	
+		alert("Масив цифр "+arr1);
+		str='';
+		for(var j=0;j<arr.length;j++)
+		str+=arr[j];
+		alert("Строка "+str);
+		str='';
+		for(var j=0;j<arr1.length;j++)
+		str+=arr1[j];
+		alert("Строка "+str);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="submit" value="Старт " onclick="main()">
+		
+	</form>
+</body>
+</html>

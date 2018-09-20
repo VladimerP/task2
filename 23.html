@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>строки в целое число</title>
+	<script>
+	 
+	function main(){
+		var x=Number(x);
+		var str='1d2s';
+		x=parseInt(str,10);
+		alert("Number "+x);
+		x=parseInt(061, 8);
+		alert("Number2 "+x);
+		x=parseInt("075adasdsas", 10);
+		alert("Number3 "+x);
+		x=parseInt(34.99, 10);
+		alert("Number4 "+x);
+		x=parseInt("FCD", 16);
+		alert("Number5 "+x);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="submit" value="Старт " onclick="main()">
+		
+	</form>
+</body>
+</html>

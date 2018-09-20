@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Минимальное слово</title>
+	<script>
+	 
+	function main(){
+		var str = document.getElementById("1").value;
+		var arr=str.split(' ');
+		var str1;
+		var str2;
+		str1=word(arr[0]);
+		for(var i=0; i<arr.length;i++){
+		str2=word(arr[i]);
+		if(str1.length>str2.length)
+		str1=word(arr[i]);
+		}
+		alert("Минимальное слово"+str1);
+	}
+	
+	function word(strt){
+	let ars=[];
+	for(let j=0;j<strt.length;j++)
+		ars.push(strt.slice(j, j+1));
+	strt='';
+	for(let k=0;k<ars.length;k++)
+		if(ars[k]!=','&&ars[k]!='.'&&ars[k]!='!'&&ars[k]!='?')
+			strt+=ars[k];
+	return strt;
+	}
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Inpu string:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

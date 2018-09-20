@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>В заданной строке удалить последнее слово</title>
+	<script>
+	 
+	function main(){
+		
+		var str = document.getElementById("1").value;
+		str = str.substring(0, str.lastIndexOf(" "));
+		alert('String '+str);
+	}
+	
+	
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Inpu string:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

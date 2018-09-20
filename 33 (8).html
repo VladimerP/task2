@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Удалить из строки ее часть с заданной позиции и заданной длины.</title>
+	<script>
+	 
+	function main(){
+		
+		var str = document.getElementById("1").value;
+		var x = document.getElementById("2").value;
+		var y = document.getElementById("3").value;
+		var str1='';
+		var arr=[];
+		for(let i=0;i<str.length;i++)
+		arr.push(str.slice(i, i+1));
+		for(let j=0;j<arr.length;j++)
+		if(j>=x-1&&j<=y-1)
+		arr[j]='';
+		for(let k=0;k<arr.length;k++)
+		str1+=arr[k];
+		alert('String '+str1);
+	}
+	
+	
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Inpu string:</b><br>
+		<input type="text" size="40" id="1">
+		<p><b>Начало:</b><br>
+		<input type="text" size="40" id="2">
+		<p><b>Конец:</b><br>
+		<input type="text" size="40" id="3">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>
